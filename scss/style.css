@@ -1,0 +1,241 @@
+body .header__encabezado {
+  background-color: #f6e3ce;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body .header__encabezado .header__encabezado--logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .header__encabezado .header__encabezado--logos img {
+  height: 70px;
+}
+
+body .header__encabezado .header__encabezado--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .header__encabezado .header__encabezado--links img {
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+}
+
+body .header__encabezado .header__encabezado--links .btn-success {
+  height: 40px;
+  width: 100px;
+  margin: 3px;
+  vertical-align: middle;
+}
+
+body .header__nav {
+  background-color: #f9ca98;
+}
+
+body .header__nav a {
+  color: #526702;
+}
+
+body .header__nav a:hover {
+  color: #0b1326;
+}
+
+body .main__portada .img-fluid {
+  width: 100%;
+}
+
+body .main__seccion {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .main__seccion .img-fluid {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body .main__seccion .form-horizontal .form-group {
+  margin: 5px 0px 5px 0px;
+  padding: 2px;
+  height: 40px;
+}
+
+body .main__seccion .form-horizontal .form-group .btn-primary {
+  width: 200px;
+}
+
+body .main__seccion .form-vertical {
+  width: 100%;
+}
+
+body .main__seccion .form-vertical .mensaje {
+  height: 200px;
+}
+
+body .main__seccion .main__seccion--contenido {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main__seccion .main__seccion--cards {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body .main__seccion .main__seccion--cards .main__seccion--card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #87a0dc;
+  padding: 10px;
+  width: 95%;
+  margin: 10px 0px 10px 0px;
+  height: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .main__seccion .main__seccion--cards .main__seccion--card p {
+  display: none;
+}
+
+body .main__seccion .main__seccion--cards .main__seccion--card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body .main__seccion .main__seccion--cards .main__seccion--card:hover h4 {
+  display: none;
+  color: #87a0dc;
+}
+
+body .main__seccion .main__seccion--cards .main__seccion--card:hover p {
+  color: black;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main__seccion iframe {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body .main__seccion fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main__seccion .equipo1 {
+  background-image: url("../images/caro.jpg");
+  background-size: 230px;
+  height: 200px;
+  margin: 10px;
+  background-color: beige;
+}
+
+body .main__seccion .equipo2 {
+  background-image: url("../images/rosi.jpg");
+  background-size: 230px;
+  height: 200px;
+  margin: 10px;
+  background-color: beige;
+}
+
+body .main__seccion .equipo3 {
+  background-image: url("../images/suky.jpg");
+  background-size: 230px;
+  height: 200px;
+  margin: 10px;
+  background-color: beige;
+}
+
+body .main__seccion .equipo4 {
+  background-image: url("../images/paz.jpg");
+  background-size: 230px;
+  height: 200px;
+  margin: 10px;
+  background-color: beige;
+}
+
+body .main__seccion .equipo5 {
+  background-image: url("../images/vicky.jpg");
+  background-size: 230px;
+  height: 200px;
+  margin: 10px;
+  background-color: beige;
+}
+
+body h1 {
+  color: #526702;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0.8;
+}
+
+body h2 {
+  color: #631f09;
+  line-height: 0.8;
+}
+
+body h3 {
+  color: #7a9a02;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+body h4 {
+  width: 100%;
+}
+
+body .footer {
+  background-color: #f6e3ce;
+}
+
+body .footer .footer__recursos {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
