@@ -1,0 +1,180 @@
+$base-color1:#718a12;
+$base-color2:#2d4e9d;
+$base-color3: #ea4e1b;
+$base-color4:#f39938;
+$color1-dark: saturate( darken( $base-color1, 10% ), 20% );
+$color1-light: desaturate(lighten( $base-color1, 30% ),20%);
+$color1-intense:saturate($base-color1, 20%);
+$color2-dark: darken( $base-color2, 30% );
+$color2-light: lighten( $base-color2, 30% );
+$color3-dark: darken( $base-color3, 30% );
+$color3-light: lighten( $base-color3, 30% );
+$color4-dark: darken( $base-color4, 30% );
+$color4-light: lighten( $base-color4, 20% );
+$color4-verylight: desaturate(lighten( $base-color4, 30% ),20%);
+
+$miembros:(
+    1:"caro",
+    2:"rosi",
+    3:"suky",
+    4:"paz",
+    5:"vicky");
+
+
+body{
+     .header__encabezado{
+            background-color: $color4-verylight;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .header__encabezado--logos{
+                display: flex;
+                justify-content: center;
+                img{height: 70px}
+            }
+            .header__encabezado--links {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 40px;
+	                height: 40px;
+                    margin: 3px;
+                }
+                .btn-success{
+                    height: 40px;
+                    width: 100px;
+                    margin: 3px;
+                    vertical-align: middle;
+                }
+            }
+            
+        }
+    .header__nav{
+         background-color: $color4-light ;
+        
+        a{
+            color: $color1-dark;
+            &:hover{
+                color: $color2-dark;
+            }
+        }
+    }
+    .main__portada {    
+        .img-fluid{
+            width: 100%;
+        }
+    }
+    .main__seccion{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .img-fluid{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-horizontal{
+            .form-group{
+                margin: 5px 0px 5px 0px;
+	            padding: 2px;
+                height: 40px;
+                .btn-primary {
+                    width: 200px;
+                }
+            }
+        }
+        .form-vertical{
+            width: 100%;
+            .mensaje{
+                height: 200px;
+            }
+
+        }
+        .main__seccion--contenido{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .main__seccion--cards{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .main__seccion--card{
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                background-color: $color2-light;
+                padding: 10px;
+                width: 95%;
+                margin: 10px 0px 10px 0px;
+                height: 200px;
+                transition: all 0.5s;
+                
+                p {
+                    display: none;
+                }
+                &:hover{
+                    transform: rotateY(180deg);
+                    h4 {
+                        display: none;
+                        color:$color2-light
+                    }
+                    p{
+                        color:black;
+                        transform: rotateY(180deg);
+                        display: flex;
+                    }
+                        
+                }
+            }
+        
+        }
+        iframe {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @each $miembro,$nombre in $miembros {
+            .equipo#{$miembro} {background-image: url('../images/#{$nombre}.jpg');background-size:230px; height:200px;margin:10px;background-color: beige;}
+        }
+        
+    }
+    h1{
+        color:$color1-dark;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 0.8;
+    }
+    h2{
+        color:$color3-dark;
+        line-height: 0.8;
+    }
+    h3{
+        color:$color1-intense;
+        font-size: 20px;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    h4{
+        width: 100%;
+    }
+    .footer{
+        background-color: $color4-verylight;
+        .footer__recursos {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
