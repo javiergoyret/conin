@@ -1,5 +1,9 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body .header__encabezado {
-  background-color: #f6e3ce;
+  background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -14,7 +18,7 @@ body .header__encabezado .header__encabezado--logos {
 }
 
 body .header__encabezado .header__encabezado--logos img {
-  height: 70px;
+  height: 90px;
 }
 
 body .header__encabezado .header__encabezado--links {
@@ -40,7 +44,8 @@ body .header__encabezado .header__encabezado--links .btn-success {
 }
 
 body .header__nav {
-  background-color: #f9ca98;
+  background-color: #f5f2ea;
+  font-weight: bold;
 }
 
 body .header__nav a {
@@ -201,15 +206,17 @@ body .main__seccion .equipo5 {
 }
 
 body h1 {
-  color: #526702;
+  color: #5e751e;
   font-size: 50px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 0.8;
 }
 
 body h2 {
-  color: #631f09;
+  color: #5e751e;
   line-height: 0.8;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 body h3 {

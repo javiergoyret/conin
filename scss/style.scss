@@ -1,3 +1,6 @@
+$color_titulo: rgb(94,117,30);
+$color_fondo_1: white;
+$color_fondo_2: #f5f2ea;
 $base-color1:#718a12;
 $base-color2:#2d4e9d;
 $base-color3: #ea4e1b;
@@ -22,14 +25,15 @@ $miembros:(
 
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
      .header__encabezado{
-            background-color: $color4-verylight;
+            background-color: $color_fondo_1;
             padding-top: 20px;
             padding-bottom: 20px;
             .header__encabezado--logos{
                 display: flex;
                 justify-content: center;
-                img{height: 70px}
+                img{height: 90px}
             }
             .header__encabezado--links {
                 display: flex;
@@ -49,7 +53,8 @@ body{
             
         }
     .header__nav{
-         background-color: $color4-light ;
+         background-color: $color_fondo_2 ;
+         font-weight: bold;
         
         a{
             color: $color1-dark;
@@ -143,14 +148,16 @@ body{
         
     }
     h1{
-        color:$color1-dark;
+        color:$color_titulo;
         font-size: 50px;
-        font-weight: bold;
+        /*font-weight: bold;*/
         line-height: 0.8;
     }
     h2{
-        color:$color3-dark;
+        color:$color_titulo;
         line-height: 0.8;
+        font-size: 28px;
+        font-weight: bold;
     }
     h3{
         color:$color1-intense;
