@@ -60,9 +60,25 @@ body .main__portada .img-fluid {
   width: 100%;
 }
 
+body .fondo_1 {
+  background-color: white;
+}
+
+body .fondo_2 {
+  background-color: #f5f2ea;
+}
+
 body .main__seccion {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+body .main__seccion .fondo_1 {
+  background-color: white;
+}
+
+body .main__seccion .fondo_2 {
+  background-color: #f5f2ea;
 }
 
 body .main__seccion .img-fluid {

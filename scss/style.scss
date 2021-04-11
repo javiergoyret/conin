@@ -68,7 +68,19 @@ body{
             width: 100%;
         }
     }
+    .fondo_1{
+        background-color: $color_fondo_1;
+    }
+    .fondo_2{
+        background-color: $color_fondo_2;
+    }
     .main__seccion{
+        .fondo_1{
+            background-color: $color_fondo_1;
+        }
+        .fondo_2{
+            background-color: $color_fondo_2;
+        }
         padding-top: 30px;
         padding-bottom: 30px;
         .img-fluid{
