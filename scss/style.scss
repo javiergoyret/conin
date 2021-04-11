@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
 $color_titulo: rgb(94,117,30);
 $color_fondo_1: white;
 $color_fondo_2: #f5f2ea;
->>>>>>> rama-2
 $base-color1:#718a12;
 $base-color2:#2d4e9d;
 $base-color3: #ea4e1b;
@@ -28,24 +25,15 @@ $miembros:(
 
 
 body{
-<<<<<<< HEAD
-     .header__encabezado{
-            background-color: $color4-verylight;
-=======
     font-family: Arial, Helvetica, sans-serif;
      .header__encabezado{
             background-color: $color_fondo_1;
->>>>>>> rama-2
             padding-top: 20px;
             padding-bottom: 20px;
             .header__encabezado--logos{
                 display: flex;
                 justify-content: center;
-<<<<<<< HEAD
-                img{height: 70px}
-=======
                 img{height: 90px}
->>>>>>> rama-2
             }
             .header__encabezado--links {
                 display: flex;
@@ -65,12 +53,8 @@ body{
             
         }
     .header__nav{
-<<<<<<< HEAD
-         background-color: $color4-light ;
-=======
          background-color: $color_fondo_2 ;
          font-weight: bold;
->>>>>>> rama-2
         
         a{
             color: $color1-dark;
@@ -84,9 +68,6 @@ body{
             width: 100%;
         }
     }
-<<<<<<< HEAD
-    .main__seccion{
-=======
     .fondo_1{
         background-color: $color_fondo_1;
     }
@@ -100,7 +81,6 @@ body{
         .fondo_2{
             background-color: $color_fondo_2;
         }
->>>>>>> rama-2
         padding-top: 30px;
         padding-bottom: 30px;
         .img-fluid{
@@ -180,16 +160,6 @@ body{
         
     }
     h1{
-<<<<<<< HEAD
-        color:$color1-dark;
-        font-size: 50px;
-        font-weight: bold;
-        line-height: 0.8;
-    }
-    h2{
-        color:$color3-dark;
-        line-height: 0.8;
-=======
         color:$color_titulo;
         font-size: 50px;
         /*font-weight: bold;*/
@@ -200,7 +170,6 @@ body{
         line-height: 0.8;
         font-size: 28px;
         font-weight: bold;
->>>>>>> rama-2
     }
     h3{
         color:$color1-intense;
