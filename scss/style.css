@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 body .header__encabezado {
   background-color: #f6e3ce;
+=======
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .header__encabezado {
+  background-color: white;
+>>>>>>> rama-2
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -14,7 +23,11 @@ body .header__encabezado .header__encabezado--logos {
 }
 
 body .header__encabezado .header__encabezado--logos img {
+<<<<<<< HEAD
   height: 70px;
+=======
+  height: 90px;
+>>>>>>> rama-2
 }
 
 body .header__encabezado .header__encabezado--links {
@@ -40,7 +53,12 @@ body .header__encabezado .header__encabezado--links .btn-success {
 }
 
 body .header__nav {
+<<<<<<< HEAD
   background-color: #f9ca98;
+=======
+  background-color: #f5f2ea;
+  font-weight: bold;
+>>>>>>> rama-2
 }
 
 body .header__nav a {
@@ -55,11 +73,33 @@ body .main__portada .img-fluid {
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+body .fondo_1 {
+  background-color: white;
+}
+
+body .fondo_2 {
+  background-color: #f5f2ea;
+}
+
+>>>>>>> rama-2
 body .main__seccion {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+<<<<<<< HEAD
+=======
+body .main__seccion .fondo_1 {
+  background-color: white;
+}
+
+body .main__seccion .fondo_2 {
+  background-color: #f5f2ea;
+}
+
+>>>>>>> rama-2
 body .main__seccion .img-fluid {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -201,15 +241,28 @@ body .main__seccion .equipo5 {
 }
 
 body h1 {
+<<<<<<< HEAD
   color: #526702;
   font-size: 50px;
   font-weight: bold;
+=======
+  color: #5e751e;
+  font-size: 50px;
+  /*font-weight: bold;*/
+>>>>>>> rama-2
   line-height: 0.8;
 }
 
 body h2 {
+<<<<<<< HEAD
   color: #631f09;
   line-height: 0.8;
+=======
+  color: #5e751e;
+  line-height: 0.8;
+  font-size: 28px;
+  font-weight: bold;
+>>>>>>> rama-2
 }
 
 body h3 {
