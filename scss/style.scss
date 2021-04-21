@@ -28,16 +28,32 @@ body{
     font-family: Arial, Helvetica, sans-serif;
      .header__encabezado{
             background-color: $color_fondo_1;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             .header__encabezado--logos{
                 display: flex;
                 justify-content: center;
                 img{height: 90px}
             }
+            @media screen and (max-width:480px) {
+                .header__encabezado--logos{
+                    display: none;
+                }
+            }
+            .header__encabezado--titulo{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+            @media screen and (max-width:480px) {
+                .header__encabezado--titulo{
+                    padding: 0px;
+                }
+            }
             .header__encabezado--links {
                 display: flex;
                 justify-content: center;
+                align-items:flex-end;
                 img {
                     width: 40px;
 	                height: 40px;
@@ -48,20 +64,39 @@ body{
                     width: 100px;
                     margin: 3px;
                     vertical-align: middle;
+                    background-color: $color_titulo;
+                    font-size: 18px;
+                    font-weight: bold;
+                    border-color: $color_titulo;
+                    &:hover{
+                        background-color:darken( $color_titulo, 10% );
+                        border-color:darken( $color_titulo, 10% );
+                    }
                 }
             }
             
         }
     .header__nav{
          background-color: $color_fondo_2 ;
-         font-weight: bold;
-        
-        a{
-            color: $color1-dark;
-            &:hover{
-                color: $color2-dark;
-            }
+        .navbar-light{
+
+            padding: 2px;
+            .navbar-nav{
+                width: 100%;
+                justify-content: space-around;
+                .nav-item{
+                    .nav-link{
+                        color: $color_titulo;
+                        font-weight: bold;
+                        &:hover{
+                            color:darken( $color_titulo, 15% );
+                        }
+                    }
+                }
+            } 
         }
+        
+        
     }
     .main__portada {    
         .img-fluid{
@@ -95,6 +130,13 @@ body{
                 height: 40px;
                 .btn-primary {
                     width: 200px;
+                    background-color: $color_titulo;
+                    border-color: $color_titulo;
+                    font-weight: bold;
+                    &:hover{
+                        background-color:darken( $color_titulo, 10% );
+                        border-color:darken( $color_titulo, 10% );
+                    }
                 }
             }
         }
@@ -105,12 +147,24 @@ body{
             }
 
         }
+        .btn-outline-primary{
+            width: 150px;
+            border-color: $color_titulo;
+            font-weight: bold;
+            color: $color_titulo;
+            &:hover{
+                background-color:$color_titulo;
+                color: white;
+                border-color:darken( $color_titulo, 10% );
+            }
+        }
         .main__seccion--contenido{
             padding-top: 20px;
             padding-bottom: 20px;
             display: flex;
             justify-content: center;
         }
+        
         .main__seccion--cards{
             padding-top: 20px;
             padding-bottom: 20px;
@@ -119,31 +173,31 @@ body{
                 display: flex;
                 flex-direction:column;
                 justify-content: center;
-                background-color: $color2-light;
-                padding: 10px;
+                //background-color: $color2-light;
                 width: 95%;
-                margin: 10px 0px 10px 0px;
-                height: 200px;
-                transition: all 0.5s;
-                
-                p {
-                    display: none;
+                margin: 10px;
+                //height: 200px;
+                .main__seccion--cardtext{
+                    opacity: 0;
+                    position: absolute;
+                    top: 8%;
+                    left: 12%;
+                    width: 80%;
+                    height: 80%;
+                    background-color:lighten($color_titulo, 50%);
+                    color: black;
+                    transition-duration: 0.5s;
+                    transition-property: all;
+                    padding: 10px;   
                 }
                 &:hover{
-                    transform: rotateY(180deg);
-                    h4 {
-                        display: none;
-                        color:$color2-light
-                    }
-                    p{
-                        color:black;
-                        transform: rotateY(180deg);
-                        display: flex;
+                    
+                    .main__seccion--cardtext{
+                        opacity: 1;
                     }
                         
                 }
             }
-        
         }
         iframe {
             margin-top: 30px;
@@ -163,13 +217,23 @@ body{
         color:$color_titulo;
         font-size: 50px;
         /*font-weight: bold;*/
-        line-height: 0.8;
+        line-height: 1;
+        margin: 0;
     }
     h2{
         color:$color_titulo;
-        line-height: 0.8;
+        line-height: 1;
         font-size: 28px;
         font-weight: bold;
+        margin: 0;
+    }
+    @media screen and (max-width:480px) {
+        h1{
+            font-size: 35px; 
+        }
+        h2{
+            font-size: 18px;
+        }
     }
     h3{
         color:$color1-intense;
@@ -181,6 +245,19 @@ body{
     h4{
         width: 100%;
     }
+
+    h5{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    h6{
+        color: $color_titulo;
+            font-size: 70px;
+            font-weight: bold;
+    }
+
+
     .footer{
         background-color: $color4-verylight;
         .footer__recursos {
