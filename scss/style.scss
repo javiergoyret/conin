@@ -109,15 +109,23 @@ body{
     .fondo_2{
         background-color: $color_fondo_2;
     }
+    .fit__seccion{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
     .main__seccion{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+        
         .fondo_1{
             background-color: $color_fondo_1;
         }
         .fondo_2{
             background-color: $color_fondo_2;
         }
-        padding-top: 30px;
-        padding-bottom: 30px;
+        
         .img-fluid{
             margin-top: 30px;
             margin-bottom: 30px;
@@ -144,6 +152,16 @@ body{
             width: 100%;
             .mensaje{
                 height: 200px;
+            }
+            .btn-primary {
+                width: 200px;
+                background-color: $color_titulo;
+                border-color: $color_titulo;
+                font-weight: bold;
+                &:hover{
+                    background-color:darken( $color_titulo, 10% );
+                    border-color:darken( $color_titulo, 10% );
+                }
             }
 
         }
@@ -237,13 +255,15 @@ body{
     }
     h3{
         color:$color1-intense;
-        font-size: 20px;
-        margin: 0;
+        font-size: 25px;
+        margin-top: 10px;
         padding: 10px;
         width: 100%;
     }
     h4{
         width: 100%;
+        padding: 15px 0px 0px 0px;
+        margin: 0;
     }
 
     h5{
@@ -256,10 +276,32 @@ body{
             font-size: 70px;
             font-weight: bold;
     }
+    p{
+        margin: 10px 0 10px 0;
+    }
+
 
 
     .footer{
         background-color: $color4-verylight;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        .footer--logos{
+            display: flex;
+            justify-content: center;
+            
+            img{height: 90px}
+        }
+        .footer--links {
+                display: flex;
+                justify-content: center;
+                align-items:flex-end;
+                img {
+                    width: 40px;
+	                height: 40px;
+                    margin: 3px;
+                }
+            }
         .footer__recursos {
             padding-top: 20px;
             padding-bottom: 20px;
